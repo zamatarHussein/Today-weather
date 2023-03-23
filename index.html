@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container w-[90%] mx-auto p-4">
+      <h1 class="text-xl text-center font-bold">Weather application</h1>
+      <form class="formEl">
+        <div class="inputGroup">
+          <label for="cityname">Please insert city</label>
+          <br />
+          <input
+            type="text"
+            class="inputEl p-3 w-full outline-none border rounded-md"
+            id="cityname"
+            placeholder="Enter your city"
+          />
+        </div>
+        <button
+          class="px-6 py-3 bg-teal-800 rounded text-white my-4 hover:bg-teal-500 transition"
+        >
+          Check weather
+        </button>
+      </form>
+
+      <div class="information">
+        <!-- city name -->
+
+        <img
+          src="https://openweathermap.org/img/w/01d.png"
+          class="imgEl"
+          alt=""
+        />
+
+        <h1 class="cityname text-4xl font-bold">Hargeisa, SO</h1>
+        <p class="desc text-gray-500">few clouds</p>
+        <h1 class="text-xl my-2 font-bold">
+          <span class="temp"></span> <sup>0</sup>C
+        </h1>
+        <h1 class="">
+          <span>Wind speed</span> <span class="wind">7.58</span> km/h
+        </h1>
+
+        <h1 class="">Humidity <span class="humidity">7.58 </span> g/kg</h1>
+      </div>
+    </div>
+  </body>
+</html>
